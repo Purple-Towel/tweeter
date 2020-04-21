@@ -1,0 +1,52 @@
+.new-tweet {
+  margin: 2.5em;
+  border: 5px dotted rgb(39, 106, 206);
+  border-radius: 4px;
+  background-color: rgb(255, 244, 219);
+}
+
+.new-tweet > h2 {
+  position: relative;
+  top: -35px;
+}
+
+label {
+  display: block;
+  border-bottom: purple solid 10px;
+  border-radius: 5px;
+  float: left;
+  width: 100%;
+  margin-right: 1em;
+}
+
+form > input {
+  float: left;
+}
+
+textarea {
+  width: 80%;
+  height: 80px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.tweetbutton {
+  border-radius: 55px;
+  border-width: thick;
+  border-style: double;
+  border-color: purple;
+  background-color: gold;
+  font-family: 'Bungee', cursive;
+  float: left;
+  position: relative;
+  bottom: -30px;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+  float: right;
+  position: relative;
+  bottom: -40px;
+}

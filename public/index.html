@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -40,6 +41,15 @@
 
     <!-- Page-specific (main) content here -->
   <main class="container">
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form method="POST" action="/tweets/">
+        <label for="tweet-text" class="italic">What are you humming about?</label>
+        <textarea name="text" id="tweet-text"></textarea>
+        <button type="submit" class="tweetbutton">Tweet</button>
+        <output name="counter" class="counter" for="tweet-text">140</output>
+      </form>
+    </section>
       Bacon ipsum dolor amet jerky capicola tri-tip turducken. Ball tip jowl porchetta capicola shoulder short ribs boudin doner flank. Salami andouille ham, venison shoulder buffalo cupim fatback kevin ham hock. Landjaeger pork jerky buffalo tenderloin rump sausage corned beef sirloin pastrami picanha leberkas.
 
       Tri-tip jowl kevin shankle venison fatback chicken kielbasa ham hock burgdoggen bresaola short ribs turkey. Doner tri-tip corned beef ribeye venison, turducken pig frankfurter kevin. Hamburger ham hock kevin shank meatloaf short loin biltong. Chicken swine pork belly alcatra short loin boudin corned beef chuck frankfurter beef ribs jowl landjaeger cupim tenderloin.

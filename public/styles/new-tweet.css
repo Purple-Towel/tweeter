@@ -50,3 +50,7 @@ textarea {
   position: relative;
   bottom: -40px;
 }
+
+.redtext {
+  color: red;
+}

@@ -1,0 +1,19 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-color: purple;
+  background-image: url(/images/argyle.png);
+}
+
+div.avatar > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 256px;
+  z-index: 5;
+}
+
+div.username {
+  text-align: center;
+  z-index: 6;
+}

@@ -1,0 +1,36 @@
+article {
+  width: 80%;
+  margin: auto auto 15px auto;
+  border: 5px dotted rgb(39, 106, 206);
+  border-radius: 4px;
+  background-color: rgb(255, 244, 219);
+  text-align: center;
+}
+
+article:hover {
+ box-shadow: 5px 5px slategrey;
+}
+
+.text-to-hide {
+  visibility: hidden;
+}
+
+article:hover .text-to-hide {
+  visibility: visible;
+}
+
+article > header {
+  width: 95%;
+  margin: 0px auto;
+  border: 5px dotted rgb(39, 106, 206);
+  border-top: 0px;
+  background-color: rgb(236, 216, 172);
+}
+
+article > footer {
+  width: 95%;
+  margin: 0px auto;
+  border: 5px dotted rgb(39, 106, 206);
+  border-bottom: 0px;
+  background-color: rgb(236, 216, 172);
+}

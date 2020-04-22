@@ -11,8 +11,11 @@ article:hover {
  box-shadow: 5px 5px slategrey;
 }
 
-.text-to-hide {
+span.text-to-hide {
   visibility: hidden;
+  float: right;
+  margin-top: 0.25em;
+  color: slategrey;
 }
 
 article:hover .text-to-hide {
@@ -25,6 +28,22 @@ article > header {
   border: 5px dotted rgb(39, 106, 206);
   border-top: 0px;
   background-color: rgb(236, 216, 172);
+  overflow: hidden;
+}
+
+span.profile > img {
+  display: block;
+  width: 5%;
+  height: 5%;
+  position: relative;
+  float: left;
+}
+
+span.username {
+  float: left;
+  font-size: 16px;
+  position: relative;
+  margin-top: 0.5em;
 }
 
 article > footer {
@@ -33,4 +52,26 @@ article > footer {
   border: 5px dotted rgb(39, 106, 206);
   border-bottom: 0px;
   background-color: rgb(236, 216, 172);
+  overflow: hidden;
+}
+
+span.time-posted {
+  float: left;
+  font-size: 11px;
+  position: relative;
+  margin-top: 0.5em;
+  margin-left: 0.10em;
+}
+
+span.button-group {
+  float: right;
+  position: relative;
+  margin-top: 0.05em;
+  margin-right: 0.10em;
+}
+
+.tweet-content {
+  font-size: 16px;
+  text-align: left;
+  margin-left: 5%;
 }

@@ -75,6 +75,8 @@ $(document).ready(function () {
     if (content !== "" && content.length <= 140) {
       let serializedData = $(this).serialize();
       $.ajax("/tweets/", { method: "POST", data: serializedData });
+      $("#tweet-text").val('');
+      $(".counter").empty().html(140);
       fetchTweets();
     };
   });

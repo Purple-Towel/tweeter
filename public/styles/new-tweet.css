@@ -12,11 +12,10 @@
 
 label {
   display: block;
-  border-bottom: purple solid 10px;
-  border-radius: 5px;
-  float: left;
   width: 100%;
   margin-right: 1em;
+  position: relative;
+  top: -55px;
 }
 
 form > input {
@@ -24,8 +23,14 @@ form > input {
 }
 
 textarea {
-  width: 80%;
+  width: 90%;
   height: 80px;
+  position: relative;
+  bottom: 2em;
+  margin-left: 5%;
+  background: transparent;
+  border: transparent;
+  border-bottom: 5px dotted rgb(39, 106, 206);
 }
 
 .italic {
@@ -39,7 +44,8 @@ textarea {
   font-family: 'Bungee', cursive;
   float: left;
   position: relative;
-  bottom: -30px;
+  bottom: 45px;
+  left: 5px;
 }
 
 .tweetbutton:hover {
@@ -50,7 +56,8 @@ textarea {
   font-family: 'Bungee', cursive;
   float: right;
   position: relative;
-  bottom: -40px;
+  bottom: 35px;
+  right: 5px;
 }
 
 .redtext {

@@ -26,11 +26,13 @@ textarea {
   width: 90%;
   height: 80px;
   position: relative;
-  bottom: 2em;
+  bottom: 50px;
   margin-left: 5%;
   background: transparent;
   border: transparent;
   border-bottom: 5px dotted rgb(39, 106, 206);
+  font-size: 12px;
+  resize: none;
 }
 
 .italic {

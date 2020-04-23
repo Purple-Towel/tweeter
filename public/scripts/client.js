@@ -66,15 +66,16 @@ $(document).ready(function () {
     event.preventDefault();
     let content = $("#tweet-text").val();
     if (content === "") {
-      alert("Empty message!");
+      $(".error").empty().html("Your content is empty!").addClass("show-error").slideDown(1750);
     };
     if (content.length > 140) {
-      alert("Too long!");
+      $(".error").empty().html("Your content is too long!").addClass("show-error").slideDown(1750);
     };
     if (content !== "" && content.length <= 140) {
-    let serializedData = $(this).serialize();
-    $.ajax("/tweets/", { method: "POST", data: serializedData });
-    fetchTweets();
+      $(".error").empty().removeClass("show-error");
+      let serializedData = $(this).serialize();
+      $.ajax("/tweets/", { method: "POST", data: serializedData });
+      fetchTweets();
     };
   });
 

@@ -65,3 +65,21 @@ textarea {
 .redtext {
   color: red;
 }
+
+.error {
+  width: 15%;
+  margin: auto auto;
+  border: 3px dashed rgb(241, 70, 70);
+  text-align: center;
+  word-wrap: break-word;
+  background-color: rgb(236, 126, 163);
+  font-style: italic;
+  font-size: 16px;
+  visibility: hidden;
+  position: relative;
+  bottom: 2.5em;
+}
+
+.show-error {
+  visibility: visible;
+}

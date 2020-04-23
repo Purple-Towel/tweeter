@@ -64,15 +64,15 @@ $(document).ready(function () {
 
   $("#sendtweet").submit(function (event) {
     event.preventDefault();
+    $(".error").empty().removeClass("show-error")
     let content = $("#tweet-text").val();
     if (content === "") {
-      $(".error").empty().html("Your content is empty!").addClass("show-error").slideDown(1750);
+      $(".error").empty().html("Your content is empty!").addClass("show-error").slideDown(750);
     };
     if (content.length > 140) {
-      $(".error").empty().html("Your content is too long!").addClass("show-error").slideDown(1750);
+      $(".error").empty().html("Your content is too long!").addClass("show-error").slideDown(750);
     };
     if (content !== "" && content.length <= 140) {
-      $(".error").empty().removeClass("show-error");
       let serializedData = $(this).serialize();
       $.ajax("/tweets/", { method: "POST", data: serializedData });
       fetchTweets();

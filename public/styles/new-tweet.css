@@ -67,7 +67,7 @@ textarea {
 }
 
 .error {
-  width: 15%;
+  width: 25%;
   margin: auto auto;
   border: 3px dashed rgb(241, 70, 70);
   text-align: center;
@@ -76,8 +76,9 @@ textarea {
   font-style: italic;
   font-size: 16px;
   visibility: hidden;
+  display: none;
   position: relative;
-  bottom: 2.5em;
+  bottom: 3.5em;
 }
 
 .show-error {

@@ -4,15 +4,21 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-  const createTweetElement = function(tweetObj) {
+  const createTweetElement = function (tweetObj) {
     let { created_at, user, content } = tweetObj
     let { avatars, name, handle } = user;
     let { text } = content;
 
+    const sanitzer = function(str) {
+      let div = document.createElement('div');
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };
+
     let $tweetHTML =
-    `
+      `
       <article>
         <header>
           <span class="profile">
@@ -25,7 +31,7 @@ $(document).ready(function() {
             ${handle}
           </span>
         </header>
-          <p class="tweet-content">${text}</p>
+          <p class="tweet-content">${sanitzer(text)}</p>
         <footer>
           <span class="time-posted">
             ${new Date(created_at).toDateString()}
@@ -39,26 +45,37 @@ $(document).ready(function() {
     return $tweetHTML;
   };
 
-  const renderTweets = function(tweetsArr) {
+  const renderTweets = function (tweetsArr) {
     for (let tweet of tweetsArr) {
       let $tweetToAppend = createTweetElement(tweet);
-      $('#tweets-container').append($tweetToAppend);
+      $('#tweets-container').prepend($tweetToAppend);
     }
   };
 
-  const fetchTweets = function() {
-    $.ajax("/tweets/", {method: "GET"})
-    .then(function(tweets) {
-      renderTweets(tweets);
-    });
+  const fetchTweets = function () {
+    $('#tweets-container').empty();
+    $.ajax("/tweets/", { method: "GET" })
+      .then(function (tweets) {
+        renderTweets(tweets);
+      });
   }
 
   fetchTweets();
 
-  $( "#sendtweet" ).submit(function( event ) {
+  $("#sendtweet").submit(function (event) {
     event.preventDefault();
+    let content = $("#tweet-text").val();
+    if (content === "") {
+      alert("Empty message!");
+    };
+    if (content.length > 140) {
+      alert("Too long!");
+    };
+    if (content !== "" && content.length <= 140) {
     let serializedData = $(this).serialize();
     $.ajax("/tweets/", { method: "POST", data: serializedData });
+    fetchTweets();
+    };
   });
 
 });

@@ -74,4 +74,5 @@ span.button-group {
   font-size: 16px;
   text-align: left;
   margin-left: 5%;
+  word-wrap: break-word;
 }

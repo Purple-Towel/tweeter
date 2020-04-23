@@ -5,10 +5,10 @@ $(document).ready(function() {
     let charCount = content.length;
     let remainingChars = 140 - charCount;
     $(".counter").empty().html(remainingChars);
-    if (remainingChars >= 1) {
+    if (remainingChars >= 0) {
       $(".counter").removeClass("redtext");
     }
-    if (remainingChars <= 0) {
+    if (remainingChars < 0) {
       $(".counter").addClass("redtext");
     }
   })

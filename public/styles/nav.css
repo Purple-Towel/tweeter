@@ -8,6 +8,8 @@ nav {
   background-color: #4056A1;
   height: 120px;
   width: 100%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 nav > span {

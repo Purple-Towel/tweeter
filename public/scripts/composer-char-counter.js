@@ -13,5 +13,5 @@ $(document).ready(function() {
     if (remainingChars < 0) {
       $(".counter").addClass("redtext");
     }
-  })
+  });
 });

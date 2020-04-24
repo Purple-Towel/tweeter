@@ -15,3 +15,17 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["photo 1"](https://github.com/Purple-Towel/tinyapp/blob/master/docs/photo1.png)
+!["photo 2"](https://github.com/Purple-Towel/tinyapp/blob/master/docs/photo2.png)
+!["photo 3"](https://github.com/Purple-Towel/tinyapp/blob/master/docs/photo1.png)
+!["photo 4"](https://github.com/Purple-Towel/tinyapp/blob/master/docs/photo2.png)
+!["photo 5"](https://github.com/Purple-Towel/tinyapp/blob/master/docs/photo1.png)
+!["photo 6"](https://github.com/Purple-Towel/tinyapp/blob/master/docs/photo2.png)
+!["photo 7"](https://github.com/Purple-Towel/tinyapp/blob/master/docs/photo7.png)
+
+### About
+
+*This project created by Angad Grewal for Lighthouse Labs March 30 Cohort*

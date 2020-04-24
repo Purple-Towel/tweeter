@@ -37,7 +37,9 @@ $(document).ready(function () {
             ${new Date(created_at).toDateString()}
           </span>
           <span class="button-group"> 
-            buttons go here
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <i class="fa fa-flag" aria-hidden="true"></i>
+          <i class="fa fa-retweet" aria-hidden="true"></i>
           </span>
           </footer>
       </article> 

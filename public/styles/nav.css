@@ -12,6 +12,20 @@ nav {
   padding-right: 0.5em;
 }
 
+.compose-tweet {
+  border: 5px dotted rgb(39, 106, 206);
+  border-radius: 5px;
+  background-color: rgb(236, 216, 172);
+  font-family: 'Bungee', cursive;
+  float: right;
+  position: relative;
+  bottom: -2.5em;
+}
+
+.compose-tweet:hover {
+  background-color: rgb(168, 151, 115);
+}
+
 nav > span {
   font-family: 'Bungee', cursive;
   font-size: 30px;

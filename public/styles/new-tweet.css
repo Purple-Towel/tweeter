@@ -3,6 +3,7 @@
   border: 5px dotted rgb(39, 106, 206);
   border-radius: 4px;
   background-color: rgb(255, 244, 219);
+  display: none;
 }
 
 .new-tweet > h2 {

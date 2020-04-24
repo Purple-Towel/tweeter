@@ -83,4 +83,8 @@ $(document).ready(function () {
     };
   });
 
+  $(".compose-tweet").click(function (event) {
+    $(".new-tweet").slideToggle();
+    $(".new-tweet").find("textarea").focus();
+  });
 });

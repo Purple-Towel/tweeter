@@ -16,15 +16,27 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: rgb(236, 225, 200);
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 120px;
 }
 
 main.container {
-  width: 90%;
+  width: 60%;
   margin: auto;
+  position: relative;
+  right: -5.5em;
+  top: -15em;
+}
+
+@media (max-width: 1023px) {
+  main.container {
+    width: unset;
+    margin: unset;
+    right: unset;
+    top: 0.5em;
+  }
 }
 
 /*

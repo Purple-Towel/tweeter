@@ -1,8 +1,9 @@
 header.user {
-  height: 400px;
-  width: 100%;
-  background-color: purple;
+  width: 30%;
+  height: auto;
+  background-color: rgb(182, 77, 182);
   background-image: url(/images/argyle.png);
+  margin: 50px;
 }
 
 div.avatar > img {
@@ -16,4 +17,27 @@ div.avatar > img {
 div.username {
   text-align: center;
   z-index: 6;
+}
+
+@media (max-width: 1023px) {
+  header.user {
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  header.user {
+    width: 60%;
+    height: 200px;
+    margin: auto;
+  }
+  div.avatar > img {
+    width: 128px;
+  }
+  div.username {
+    position: relative;
+    top: -1.5em;
+  }
 }
